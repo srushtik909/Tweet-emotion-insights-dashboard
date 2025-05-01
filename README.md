@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
+# Tweet Emotion Insights Dashboard
 
-## Project info
+A web-based dashboard for analyzing and visualizing emotions in tweets. This project uses modern web technologies to provide insights into tweet sentiment and emotional trends.
 
-**URL**: https://lovable.dev/projects/6e53efd7-ffe7-4d68-86f8-2ce462e51fbc
+## Features
 
-## How can I edit this code?
+- Analyze tweet emotions using sentiment analysis.
+- Visualize data with interactive charts and graphs.
+- Responsive design for desktop and mobile devices.
+- Built with modern tools like Vite, React, and TypeScript.
 
-There are several ways of editing your application.
+## Prerequisites
 
-**Use Lovable**
+Before running the project, ensure you have the following installed:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6e53efd7-ffe7-4d68-86f8-2ce462e51fbc) and start prompting.
+- [Node.js](https://nodejs.org/) (v16 or later)
+- [npm](https://www.npmjs.com/) or [bun](https://bun.sh/) (optional)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/tweetemo.git
+   cd tweetemo
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+   Or, if using `bun`:
+   ```sh
+   bun install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Usage
 
-Follow these steps:
+### Development Server
+
+To start the development server:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080` (or another port if specified).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+To create a production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+npm run build
+```
 
-## What technologies are used for this project?
+The build output will be located in the `dist` directory.
 
-This project is built with:
+### Preview Production Build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To preview the production build locally:
 
-## How can I deploy this project?
+```sh
+npm run preview
+```
 
-Simply open [Lovable](https://lovable.dev/projects/6e53efd7-ffe7-4d68-86f8-2ce462e51fbc) and click on Share -> Publish.
+### Linting and Type-Checking
 
-## Can I connect a custom domain to my Lovable project?
+- To lint the code and fix issues:
+  ```sh
+  npm run lint
+  ```
 
-Yes, you can!
+- To perform TypeScript type-checking:
+  ```sh
+  npm run type-check
+  ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Project Structure
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
+tweetemo/
+├── src/                # Source code
+│   ├── components/     # React components
+│   ├── assets/         # Static assets (images, styles, etc.)
+│   ├── utils/          # Utility functions
+│   └── App.tsx         # Main application entry point
+├── public/             # Public assets
+├── dist/               # Production build output
+├── package.json        # Project configuration
+└── README.md           # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push the branch.
+4. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Chart.js](https://www.chartjs.org/) (or any other library used for visualization)
+
+## Contact
+
+For questions or feedback, please contact [your-email@example.com].
