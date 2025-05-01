@@ -1,0 +1,19 @@
+interface Tweet {
+  id: string;
+  avatar: string;
+  username: string;
+  handle: string;
+  content: string;
+  time: string;
+  sentiment: 'positive' | 'negative' | 'neutral';
+  emotions: {
+    joy: number;
+    anger: number;
+    sadness: number;
+    fear: number;
+    surprise: number;
+  };
+}
+
+const mockTweets: Tweet[] = [
+// ... existing code ...

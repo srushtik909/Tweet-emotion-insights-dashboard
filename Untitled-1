@@ -1,0 +1,18 @@
+import { useState } from 'react';
+
+const YourComponent = () => {
+  const [keywords, setKeywords] = useState<string[]>(['happy', 'excited']);
+  
+  return (
+    <div>
+      {/* Your component content here */}
+      <div className="keywords">
+        {keywords.map((keyword, index) => (
+          <span key={index}>{keyword}</span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default YourComponent;
